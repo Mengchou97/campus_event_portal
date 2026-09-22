@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('location');
             $table->text('description');
-            $table->dateTime('start_at');
-            $table->dateTime('end_at');
+            $table->dateTime('starts_at');
+            $table->dateTime('ends_at');
             $table->string('status')->default('draft');
             $table->timestamps();
         });
