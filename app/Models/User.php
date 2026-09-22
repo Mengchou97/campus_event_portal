@@ -29,4 +29,13 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function registrations()
+    {
+        return $this->hasMany(Registration::class);
+    }
+    public function ticketsThroughRegistrations()
+    {
+        return $this->hasManyThrough(Ticket::class, Registration::class);
+    }
 }
