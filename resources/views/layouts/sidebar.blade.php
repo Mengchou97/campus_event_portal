@@ -13,6 +13,10 @@
                         <i class="nav-icon bi bi-house"></i>
                         <p>Home</p>
                     </a>
+                    <a href="{{ route('events.index') }}" class="nav-link">
+                        <i class="nav-icon bi bi-calendar"></i>
+                        <p>Events</p>
+                    </a>
                     <a href="{{ route('login') }}" class="nav-link">
                         <i class="nav-icon bi bi-house"></i>
                         <p>Login</p>
